@@ -41,21 +41,11 @@ function App() {
 
 
 
-              <Route path="/aboutus" element={<AboutUs/>} />
+              <Route path="/about" element={<AboutUs/>} />
                <Route path="/servicepage" element={<ServicePage/>} />
               
                 <Route path="/Blogs" element={<OurPages/>} />
                 <Route path="/contact" element={<Contact/>} />
-             
-
-
-
-
-
-
-
-
-
       </Routes>
       <Footer/>
     </>

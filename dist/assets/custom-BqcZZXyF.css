@@ -647,7 +647,7 @@ header.main-header .header-sticky.active {
 }
 
 .navbar {
-    padding: 30px 0;
+    padding: 0px 0;
     align-items: center;
 }
 
@@ -2342,7 +2342,7 @@ header.main-header .header-sticky.active {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto;
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 .testimonial-slider {
@@ -2481,8 +2481,8 @@ header.main-header .header-sticky.active {
 }
 
 .testimonial-company-slider .company-logo img {
-    width: 100%;
-    max-height: 40px;
+    width: 10%;
+    max-height: 130px;
 }
 
 /************************************/
@@ -2658,8 +2658,9 @@ header.main-header .header-sticky.active {
 }
 
 .footer-logo img {
-    width: 100%;
-    max-width: 163px;
+    width: 80%;
+    max-width: 123px;
+    margin-left: 30px;
 }
 
 .about-footer-content p {
