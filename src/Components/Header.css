@@ -1,0 +1,172 @@
+/* Mobile Hamburger Menu Styles */
+.navbar-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto;
+  display: block;
+  color: #1b4b36;
+  outline: none;
+  box-shadow: none;
+  z-index: 1060;
+  position: relative;
+}
+
+.navbar-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  display: none;
+}
+
+.mobile-menu-overlay.show {
+  display: block;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 300px;
+    max-width: 85vw;
+    padding: 20px;
+    background: white;
+    z-index: 1050;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+  }
+
+  .nav-menu-wrapper {
+    position: relative;
+    z-index: 1051;
+  }
+
+  .navbar-nav {
+    margin-top: 50px;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+    display: block;
+    color: #1b4b36;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    color: #2d7a54;
+  }
+
+  .header-contact-btn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    z-index: 1051;
+  }
+
+  .header-contact-btn a {
+    position: relative;
+    z-index: 1051;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .mobile-menu-overlay {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+  }
+}
+
+/* Logo wrapper */
+.logob {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Logo image – desktop default */
+.logob img {
+  width: 160px;        /* desktop width */
+  height: auto;        /* keep aspect ratio */
+  max-height: 60px;    /* desktop height limit */
+  display: block;
+}
+
+/* Desktop (large screens) */
+@media (min-width: 1024px) {
+  .logob {
+    top: 0;
+    bottom: 0;
+  }
+
+  .logob img {
+    width: 180px;
+    max-height: 65px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logob img {
+    width: 150px;
+    max-height: 55px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .logob {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .logob img {
+    width: 120px;      /* mobile width */
+    max-height: 45px;  /* mobile height */
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .logob img {
+    width: 105px;
+    max-height: 40px;
+  }
+}
